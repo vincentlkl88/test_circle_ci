@@ -20,10 +20,18 @@
     Settings > Build Settings > environment Variables (turn on)
 
 9.) Setting the forked PR
-    Settings > Build Settings > Advanced Settings > Build forked pull requests (turn on)
+    Settings > Build Settings > Advanced Settings
+    - Build forked pull requests - on
+    - Pass secrets to builds from forked pull requests - on
+    - Only build pull requests - on
 
-10.) Setup the PR build settings
-    Settings > Build Settings > Advanced Settings > Pass secrets to builds from forked pull requests (turn on)
+10.) Add cicle.yml to project.
+    deployment:
+      staging:
+        branch: master
+        heroku:
+          appname: AppName
+
 
 <h2>Heroku setup setup</h2>
 1.) Go to the app dashboard > Deploy.
@@ -47,6 +55,7 @@
 
 10.) search for the repo and connect to the app.
 
+<hr/>
 <%= ENV['TEST_ENV'] %>
 <hr/>
 <p>Testing</p>
