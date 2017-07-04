@@ -1,15 +1,26 @@
 <h2>Instruction</h2>
 1.) Go to https://circleci.com/signup/ to sign up
+
 2.) Go to "Projects"
     https://circleci.com/projects
+
 3.) Pick the organization.
+
 4.) Pick the user.
+
 5.) Add the project from the user.
+
 6.) Generating the heroku key. On heroku site, go to accounting setting page,
     you will be able to see the api key. Reveal to show the key.
+
 7.) Go back to CircleCI page, go to "USER SETTINGS" -> "Heroku API Key" set the
     deployment key.
+
 8.) Setting the environment variable for the build
-    Settings > Build Settings > environment Variables
+    Settings > Build Settings > environment Variables (turn on)
+
+9.) Setting the forked PR
+    Settings > Build Settings > Advanced Settings > Build forked pull requests (turn on)
+
 8.) Setup the PR build settings
-    Settings > Build Settings > Advanced Settings > Pass secrets to builds from forked pull requests
+    Settings > Build Settings > Advanced Settings > Pass secrets to builds from forked pull requests (turn on)
